@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BA7DA6A2A6DE5C500013385 /* QuickzoomLib in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA7DA692A6DE5C500013385 /* QuickzoomLib */; };
 		9BA898A12A1A5658009E34F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA898A02A1A5658009E34F7 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9BA7DA672A6DE5A900013385 /* QuickzoomLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = QuickzoomLib; path = ../QuickzoomLib; sourceTree = "<group>"; };
 		9BA8989D2A1A5658009E34F7 /* quickzoom */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = quickzoom; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA898A02A1A5658009E34F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9BA898A72A1A5916009E34F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,17 +35,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA7DA6A2A6DE5C500013385 /* QuickzoomLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BA7DA642A6DE35F00013385 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9BA7DA672A6DE5A900013385 /* QuickzoomLib */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		9BA7DA682A6DE5C500013385 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9BA898942A1A5658009E34F7 = {
 			isa = PBXGroup;
 			children = (
+				9BA7DA642A6DE35F00013385 /* Packages */,
 				9BA8989F2A1A5658009E34F7 /* quickzoom */,
 				9BA8989E2A1A5658009E34F7 /* Products */,
+				9BA7DA682A6DE5C500013385 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +100,9 @@
 			dependencies = (
 			);
 			name = quickzoom;
+			packageProductDependencies = (
+				9BA7DA692A6DE5C500013385 /* QuickzoomLib */,
+			);
 			productName = quickzoom;
 			productReference = 9BA8989D2A1A5658009E34F7 /* quickzoom */;
 			productType = "com.apple.product-type.tool";
@@ -180,7 +203,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = quickzoom/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -235,7 +258,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = quickzoom/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -290,6 +313,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9BA7DA692A6DE5C500013385 /* QuickzoomLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickzoomLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9BA898952A1A5658009E34F7 /* Project object */;
 }
