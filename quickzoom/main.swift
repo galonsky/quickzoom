@@ -9,9 +9,6 @@ import Foundation
 import EventKit
 import QuickzoomLib
 
-
-print("Hello, World!")
-
 let fetcher = EventFetcher()
 fetcher.requestAccess()
 do {
