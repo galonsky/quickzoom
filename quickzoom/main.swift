@@ -15,7 +15,11 @@ print("Hello, World!")
 let fetcher = EventFetcher()
 fetcher.requestAccess()
 do {
-    let events = try fetcher.getEvents()
+    if let events = try fetcher.getEvents() {
+        let zoomEvents = events.compactMap { parseEvent(event: $0)}
+        let alfredJson = try serializeForAlfred(events: zoomEvents)
+        print(alfredJson)
+    }
     
 } catch NoAccessError.runtimeError {
     exit(EXIT_FAILURE)
