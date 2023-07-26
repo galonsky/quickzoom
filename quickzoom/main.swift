@@ -13,7 +13,7 @@ let fetcher = EventFetcher()
 fetcher.requestAccess()
 do {
     if let events = try fetcher.getEvents() {
-        let zoomEvents = events.compactMap { parseEvent(event: $0)}
+        let zoomEvents = Set(events.compactMap { parseEvent(event: $0)}).sorted()
         let alfredJson = try serializeForAlfred(events: zoomEvents)
         print(alfredJson)
     }
