@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "quickzoomlib",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/galonsky/QuickzoomLib",
+      "state" : {
+        "revision" : "78ee6b6f54f43d75d46b56ee73868ff271d8f650",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

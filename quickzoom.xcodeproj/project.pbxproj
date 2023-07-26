@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BA7DA6A2A6DE5C500013385 /* QuickzoomLib in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA7DA692A6DE5C500013385 /* QuickzoomLib */; };
+		9BA7DA6D2A70BF2A00013385 /* QuickzoomLib in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA7DA6C2A70BF2A00013385 /* QuickzoomLib */; };
 		9BA898A12A1A5658009E34F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA898A02A1A5658009E34F7 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9BA7DA672A6DE5A900013385 /* QuickzoomLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = QuickzoomLib; path = ../QuickzoomLib; sourceTree = "<group>"; };
 		9BA8989D2A1A5658009E34F7 /* quickzoom */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = quickzoom; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA898A02A1A5658009E34F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9BA898A72A1A5916009E34F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA7DA6A2A6DE5C500013385 /* QuickzoomLib in Frameworks */,
+				9BA7DA6D2A70BF2A00013385 /* QuickzoomLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +44,6 @@
 		9BA7DA642A6DE35F00013385 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				9BA7DA672A6DE5A900013385 /* QuickzoomLib */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -101,7 +99,7 @@
 			);
 			name = quickzoom;
 			packageProductDependencies = (
-				9BA7DA692A6DE5C500013385 /* QuickzoomLib */,
+				9BA7DA6C2A70BF2A00013385 /* QuickzoomLib */,
 			);
 			productName = quickzoom;
 			productReference = 9BA8989D2A1A5658009E34F7 /* quickzoom */;
@@ -131,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 9BA898942A1A5658009E34F7;
+			packageReferences = (
+				9BA7DA6B2A70BF2A00013385 /* XCRemoteSwiftPackageReference "QuickzoomLib" */,
+			);
 			productRefGroup = 9BA8989E2A1A5658009E34F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,9 +315,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		9BA7DA6B2A70BF2A00013385 /* XCRemoteSwiftPackageReference "QuickzoomLib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/galonsky/QuickzoomLib";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		9BA7DA692A6DE5C500013385 /* QuickzoomLib */ = {
+		9BA7DA6C2A70BF2A00013385 /* QuickzoomLib */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 9BA7DA6B2A70BF2A00013385 /* XCRemoteSwiftPackageReference "QuickzoomLib" */;
 			productName = QuickzoomLib;
 		};
 /* End XCSwiftPackageProductDependency section */
