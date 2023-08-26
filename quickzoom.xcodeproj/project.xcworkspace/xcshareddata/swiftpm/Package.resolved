@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/galonsky/QuickzoomLib",
       "state" : {
-        "revision" : "78ee6b6f54f43d75d46b56ee73868ff271d8f650",
-        "version" : "0.0.1"
+        "revision" : "7db33d01ba8447f0b13e6a3418b4adabac2772ed",
+        "version" : "0.0.2"
       }
     }
   ],

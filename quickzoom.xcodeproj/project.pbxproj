@@ -321,7 +321,7 @@
 			repositoryURL = "https://github.com/galonsky/QuickzoomLib";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				minimumVersion = 0.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
